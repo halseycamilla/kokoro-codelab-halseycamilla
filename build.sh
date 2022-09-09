@@ -3,9 +3,10 @@
 # Fail on any error.
 set -e 
 
-git clone --depth 1 https://github.com/tensorflow/tensorflow.git
+cd "~"
+git clone --depth 1 "https://github.com/tensorflow/tensorflow.git"
 
-docker pull tensorflow/build:latest-python3.9
+docker pull "tensorflow/build:latest-python3.9"
 
 mkdir "${KOKORO_ARTIFICATS_DIR}/github/kokoro-codelab-halseycamilla/packages"
 mkdir "${KOKORO_ARTIFICATS_DIR}/github/kokoro-codelab-halseycamilla/bazelcache"
